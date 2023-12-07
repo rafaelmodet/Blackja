@@ -14,6 +14,7 @@ class Card:
 
     def get_image(self):
         # TODO: Return the path to the card's image
+        print("Hola")
         pass
 
 class Deck:
