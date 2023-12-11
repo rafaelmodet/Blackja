@@ -39,11 +39,12 @@ class Deck:
         return self.cards.pop()
     pass
 
-class EnglishDeck(Deck):
+class EnglishDeck(Deck): # Here we define with 2 lists which are the differents suits and the differents values
     def __init__(self):
-        suit =['hearts','diamonds','clubs','spaces']
-        value =['2','3','4','5','6','7','8','9','J','Q','K','A']
-        pass 
+        suits = ['hearts', 'diamonds', 'clubs', 'spades']
+        values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        super().__init__(suits, values)
+        pass
 
 class Hand:
     def __init__(self):
